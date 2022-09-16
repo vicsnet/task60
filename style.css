@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+#sl{
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header  ul{
+  list-style: none;
+  display: flex;
+
+
+
+}
+header ul li{
+  display: flex;
+    padding: 10px;
+
+}
+main{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.book-btn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  height: 200px;
+}
+.book-btn button{
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+}
+.small-car,
+.big-car {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.small-car-design,
+#myDiv {
+  width: 80px;
+  margin-left: 7px;
+  height: 100px;
+  background-color: blue;
+}
+#myDiv2 {
+  width: 160px;
+  margin-left: 7px;
+  height: 100px;
+  background-color: blue;
+}
+#no{
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
+  text-align: center;
+}
+#hel{ 
+  font-size: 24px;
+  text-transform: capitalize;
+  color: white;
+   transform: rotate(45deg);
+}
+/* .book-btn {
+  margin-top: 4px;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  background: grey;
+  border: none; 
+}*/
+.big-car-design1 {
+  width: 70px;
+  background: blue;
+  height: 100px;
+  margin-right: 2px;
+}
+.big-car-design-2 {
+  width: 120px;
+  background: blue;
+  height: 100px;
+}
+.big-park {
+  display: flex;
+  flex-direction: row;
+}
