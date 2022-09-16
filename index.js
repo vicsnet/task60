@@ -1,5 +1,3 @@
-let buttons = Array.from(document.getElementsByClassName("button"));
-
 const book1 = () => {
   document.getElementById("text1").innerHTML = "Booked";
   document.getElementById("my").style.backgroundColor = "lightblue";
@@ -9,8 +7,8 @@ const book2 = () => {
   document.getElementById("my1").style.backgroundColor = "lightblue";
 };
 const book3 = () => {
-document.getElementById("text3").innerHTML = "Booked";
-document.getElementById("my2").style.backgroundColor = "lightblue";
+  document.getElementById("text3").innerHTML = "Booked";
+  document.getElementById("my2").style.backgroundColor = "lightblue";
 };
 const book4 = () => {
   document.getElementById("text4").innerHTML = "Booked";
@@ -21,8 +19,8 @@ const book5 = () => {
   document.getElementById("my4").style.backgroundColor = "lightblue";
 };
 const book6 = () => {
- document.getElementById("text6").innerHTML = "Booked";
- document.getElementById("my5").style.backgroundColor = "lightblue";
+  document.getElementById("text6").innerHTML = "Booked";
+  document.getElementById("my5").style.backgroundColor = "lightblue";
 };
 const book7 = () => {
   document.getElementById("text7").innerHTML = "Booked";
@@ -37,12 +35,12 @@ const book9 = () => {
   document.getElementById("my8").style.backgroundColor = "lightblue";
 };
 const book10 = () => {
-document.getElementById("text10").innerHTML = "Booked";
-document.getElementById("my9").style.backgroundColor = "lightblue";
+  document.getElementById("text10").innerHTML = "Booked";
+  document.getElementById("my9").style.backgroundColor = "lightblue";
 };
 const book11 = () => {
- document.getElementById("text11").innerHTML = "Booked";
- document.getElementById("my10").style.backgroundColor = "lightblue";
+  document.getElementById("text11").innerHTML = "Booked";
+  document.getElementById("my10").style.backgroundColor = "lightblue";
 };
 const book12 = () => {
   document.getElementById("text12").innerHTML = "Booked";
@@ -53,12 +51,12 @@ const book13 = () => {
   document.getElementById("my12").style.backgroundColor = "lightblue";
 };
 const book14 = () => {
- document.getElementById("text14").innerHTML = "Booked";
- document.getElementById("my13").style.backgroundColor = "lightblue";
+  document.getElementById("text14").innerHTML = "Booked";
+  document.getElementById("my13").style.backgroundColor = "lightblue";
 };
 const book15 = () => {
- document.getElementById("text15").innerHTML = "Booked";
- document.getElementById("my14").style.backgroundColor = "lightblue";
+  document.getElementById("text15").innerHTML = "Booked";
+  document.getElementById("my14").style.backgroundColor = "lightblue";
 };
 const book16 = () => {
   document.getElementById("text16").innerHTML = "Booked";
@@ -73,12 +71,10 @@ const book18 = () => {
   document.getElementById("my17").style.backgroundColor = "lightblue";
 };
 const book19 = () => {
- document.getElementById("text19").innerHTML = "Booked";
- document.getElementById("my18").style.backgroundColor = "lightblue";
+  document.getElementById("text19").innerHTML = "Booked";
+  document.getElementById("my18").style.backgroundColor = "lightblue";
 };
 const book20 = () => {
   document.getElementById("text20").innerHTML = "Booked";
   document.getElementById("my19").style.backgroundColor = "lightblue";
 };
-
-
