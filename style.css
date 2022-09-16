@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  font-family: 'Courier New', Courier, monospace;;
+}
 header {
   width: 90%;
   margin-left: auto;
@@ -16,10 +18,14 @@ header {
   text-align: center;
   padding-bottom: 25px;
 }
-
+header h1{
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
 header  ul{
   list-style: none;
   display: flex;
+  font-family: serif;
 
 
 
