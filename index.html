@@ -27,7 +27,7 @@ packing space
        <div class="">
 
            <h1 id="sl"> book your slot</h1>
-           <form name='myForm'>
+           <form name='myForm' onsubmit="handleSubmit()">
             <label for="">Name</label>
             <input type="text" name="name" id="name">
             <label for="cars">Car Size:</label>
@@ -62,10 +62,11 @@ packing space
                 <option value="20">20</option>
             </select>
 
-            <button onClick="handleSubmit()">Book Slot</button>
+            <button type="submit">Book Slot</button>
+           
+            <button onClick="checkOut"> checkOut</button>
            </form>
-
-           <div class="book-btn">
+           <!-- <div class="book-btn">
             <button class="button" onClick="book1()">1</button>
             <button class="button" onClick="book2()">2</button>
             <button class="button" onClick="book3()">3</button>
@@ -87,7 +88,7 @@ packing space
             <button class="button" onClick="book19()">19</button>
             <button class="button" onClick="book20()">20</button>
            </div>
-       </div>
+       </div> -->
 <div class="">
     <div class="small-car">
         <div class="">
