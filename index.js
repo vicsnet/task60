@@ -1,3 +1,34 @@
+const handleSubmit = (e) => {
+  // e.preventDefault()
+  // if (document.myForm.name.value == "") {
+  //   alert("Please provide your name!");
+  //   document.myForm.name.focus();
+  //   return false;
+  // }
+  // if (document.myForm.cars.value == "-1") {
+  //   alert("Please select your car size!");
+  //   return false;
+  // }
+
+  // if (document.myForm.space.value == "-1") {
+  //   alert("choose your packing space");
+  // }
+  // window.localStorage.setItem("name", "cars", "space");
+  // return true;
+  let date = new Date();
+  let time = date.getHours() + " :" + date.getMinutes();
+  let name, size, space;
+
+  name = document.getElementById("name").value;
+  size = document.getElementById("size").value;
+  space = document.getElementById("space").value;
+
+  localStorage.setItem("name", name);
+  localStorage.setItem("size", size);
+  localStorage.setItem("space", space);
+  localStorage.setItem("time", time);
+};
+
 const book1 = () => {
   document.getElementById("text1").innerHTML = "Booked";
   document.getElementById("my").style.backgroundColor = "lightblue";
