@@ -13,6 +13,7 @@ const handleSubmit = (e) => {
   // localStorage.setItem("time", time);
 
   let user_records = new Array();
+
   user_records = JSON.parse(localStorage.getItem("users"))
     ? JSON.parse(localStorage.getItem("users"))
     : [];
@@ -24,11 +25,14 @@ const handleSubmit = (e) => {
     alert("duplicate data");
   } else {
     user_records.push({
+      key: space,
       name: name,
       size: size,
       space: space,
       time: time,
-    });
+
+    }
+    );
     localStorage.setItem("users", JSON.stringify(user_records));
   }
 
@@ -36,11 +40,6 @@ const handleSubmit = (e) => {
 };
 
 const checkout = (e) => {
-  // localstorage_value.textContent = localStorage.getItem("users");
-  // console.log(localstorage_value.textContent);
-
-  // console.log('')
-
   let date = new Date();
   let time = date.getHours() + " :" + date.getMinutes();
   let name, size, space;
@@ -50,6 +49,7 @@ const checkout = (e) => {
   space = document.myForm.space.value;
 
   let user_records = JSON.parse(localStorage.getItem("users")) || [];
+
   let exist =
     user_records.length &&
     JSON.parse(localStorage.getItem("users")).some(
@@ -60,7 +60,17 @@ const checkout = (e) => {
   if (!exist) {
     alert("Incorrect parking details");
   } else {
-    localStorage.removeItem('users');
+    // const greetings = JSON.parse(localStorage.getItem("users"));
+    var remove = exist.filter(
+      (data) =>
+        data.name == name &&
+        data.size == size &&
+        data.space == space &&
+        data.time == time
+    );
+
+    localStorage.setItem( remove);
+
     alert("thanks for paking with us");
   }
   e.preventDefault();
